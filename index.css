@@ -1,0 +1,445 @@
+:root {
+    --blue: #2f3846;
+}
+
+/* ฟ้อนท์ตัวอักษรทั้งเว็บ */
+* {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rowfull {
+    display: flex;
+    height: 463px;
+}
+
+.rowfooter {
+    display: flex;
+    height: 200px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.topicball {
+    width: 15vw;
+    /* Diameter of the ball as a percentage of viewport width */
+    height: 15vw;
+    /* Diameter of the ball as a percentage of viewport width */
+    max-width: 200px;
+    /* Maximum diameter */
+    max-height: 200px;
+    /* Maximum diameter */
+    background-color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    /* Text color */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.introtext {
+    font-weight: bold;
+}
+
+.introtext2 {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.introtext3 {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+/* ปุ่มทั่วไป */
+.textButton1 {
+    text-decoration: none;
+    display: flex;
+    background-color: var(--blue);
+    border-radius: 30px;
+    height: 62px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* ปุ่มเมื่อ hover */
+.textButton1:hover {
+    color: white;
+    background-color: #262d3a;
+}
+
+/* ปุ่มสีขาว */
+.textButton2 {
+    text-decoration: none;
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    height: 62px;
+    color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* ปุ่มเมื่อ hover */
+.textButton2:hover {
+    color: var(--blue);
+    background-color: rgb(202, 202, 202)
+}
+
+.textButton2:active {
+    --bs-btn-active-bg: rgb(184, 184, 184);
+    /* เปลี่ยนสีพื้นหลังของปุ่มในสถานะ active */
+}
+
+.textButton3 {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    border: solid 3px;
+    border-radius: 30px;
+    border-color: var(--blue);
+    height: 62px;
+    color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.textButton4 {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    background-color: var(--blue);
+    border: solid 3px;
+    border-radius: 30px;
+    border-color: white;
+    height: 62px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.landingimg {
+    position: absolute;
+    /* การจัดตำแหน่งแบบ absolute เพื่อให้ทับได้ */
+    margin-top: 60px;
+    margin-left: 50%;
+    width: auto;
+    /* ความกว้างเต็มของ container */
+    height: 40%;
+    /* ปรับความสูงตามสัดส่วนของภาพ */
+}
+
+.psulogo {
+    width: 262px;
+    height: 80px;
+}
+
+.coclogo {
+    width: 181px;
+    height: 144px;
+}
+
+.employmentlogo {
+    width: 200px;
+    height: 200px;
+}
+
+.skillsgraphiclogo {
+    width:40%;
+    height: auto;
+    padding: 20px;
+}
+
+.unitylogo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: auto;
+}
+
+.star {
+    width: 50%;
+    height: auto;
+}
+
+.transcript {
+    width: 100%;
+    height: auto;
+}
+
+/* แถบเมนู */
+nav {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+/* ไอคอนรูปปุ่ม hamburger */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
+}
+
+.navbar-nav {
+    text-align: end;
+}
+
+.nav-link {
+    color: white;
+}
+
+.profileimg {
+    width: 20%;
+    height: auto;
+}
+
+.slider {
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider2 {
+    height: 450px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(200px * 12); /* เลขตัวหลังคือจำนวนรูปที่มี x 2 */
+    height: 200px;
+    animation: scroll 20s linear infinite; /*จำนวนวินาทีที่เลื่อน*/
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide-track2 {
+    display: flex;
+    width: calc(600px * 12); /* เลขตัวหลังคือจำนวนรูปที่มี x 2 */
+    height: auto;
+    animation: scroll 20s linear infinite; /*จำนวนวินาทีที่เลื่อน*/
+}
+
+.slide-track2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6)); /* เลขตัวหลังคือจำนวนรูปที่มี */
+    }
+}
+
+.slide {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    perspective: 100px;
+}
+
+.slide2 {
+    background-color: var(--blue);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    perspective: 100px;
+}
+
+.certificateimg {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.certificateimg:hover{
+    transform: translateZ(20px);
+}
+
+/* ตัว fade ขอบซ้ายขวา */
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 5%;
+    z-index: 2;
+}
+
+.slider::before,.slider2::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after,.slider2::after {
+    right: -1px;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider2::before,
+.slider2::after {
+    background: linear-gradient(to right, var(--blue) 0%,rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 5%;
+    z-index: 2;
+}
+
+.footerlogo {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+}
+
+/*//////////////////////////////////////// จอระหว่างใหญ่มากลาง * แก้พิเศษ * ////////////////////////////////////////*/
+@media (min-width: 992px) and (max-width: 1400px) {
+    .skillslevel {
+        font-size: 17px;
+    }
+
+    .star {
+        width: 120%;
+        height: auto;
+    }
+}
+
+/*//////////////////////////////////////// จอกลาง ////////////////////////////////////////*/
+@media (max-width: 768px) {
+
+    .textButton1,
+    .textButton2,
+    .textButton3,
+    .textButton4 {
+        font-size: 9pt;
+    }
+
+    .introtext {
+        font-size: 9pt;
+    }
+
+    .topicball {
+        width: 20vw;
+        height: 20vw;
+        line-height: 5vw;
+        font-size: 15px;
+    }
+
+    .landingimg {
+        width: 0%;
+        height: 0%;
+    }
+
+    .psulogo {
+        width: 131px;
+        height: 40px;
+    }
+
+    .coclogo {
+        width: 90px;
+        height: 72px;
+    }
+
+    .skillsgraphiclogo {
+        width:80%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+/*//////////////////////////////////////// จอเล็ก ////////////////////////////////////////*/
+@media (max-width: 576px) {
+
+    .landingimg {
+        width: 0%;
+        height: 0%;
+    }
+
+    .textButton1,
+    .textButton2 {
+        font-size: 7pt;
+    }
+
+    .introtext {
+        font-size: 7pt;
+    }
+
+    .personalcontact {
+        font-size: 12pt;
+    }
+
+    .topicball {
+        width: 20vw;
+        height: 20vw;
+        line-height: 5vw;
+        font-size: 12px;
+    }
+
+    .landingimg {
+        margin-top: 102px;
+        margin-left: 25%;
+    }
+    .psulogo {
+        width: 131px;
+        height: 40px;
+    }
+    
+    .coclogo {
+        width: 90px;
+        height: 72px;
+    }
+
+    .skillsgraphiclogo {
+        width:120%;
+        height: auto;
+    }
+
+    .unitylogo {
+        width: 100%;
+        height: auto;
+    }
+
+    .star {
+        width: 150%;
+        height: auto;
+    }
+}
